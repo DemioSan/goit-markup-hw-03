@@ -369,13 +369,15 @@ address {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-
+.button-menu {
+  margin-bottom: 72px;
+}
 .button-filters-li {
   display: flex;
   justify-content: center;
   gap: 24px;
 
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/
 }
 
 .button-filters {
@@ -419,8 +421,6 @@ address {
 
 .project-card-li {
   width: calc((100% - 48px) / 3);
-  border: 1px solid var(--accent-color);
-  border-top: none;
 }
 
 .portfolio-div {
