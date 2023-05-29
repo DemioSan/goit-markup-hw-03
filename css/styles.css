@@ -32,10 +32,6 @@ header .container {
   align-items: center;
 }
 
-.header-nav {
-  display: flex;
-}
-
 p {
   margin: 0;
 }
@@ -52,14 +48,10 @@ img {
   object-fit: cover;
 }
 
-section {
-  padding: 120px 156px;
-}
-
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 .list {
@@ -84,6 +76,7 @@ section {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .span-header {
   color: var(--dark-color);
@@ -95,15 +88,11 @@ section {
 }
 .header {
   display: flex;
+
+  align-items: center;
   justify-content: space-between;
-  align-items: baseline;
-
-  padding: 24px 24px;
-
   box-sizing: border-box;
   border-bottom: 1px solid var(--accent-color);
-
-  padding: 24px 156px;
 }
 .header-link {
   display: flex;
@@ -111,8 +100,12 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 
-  margin-left: 76px;
+  margin-right: 332px;
 }
 
 .header-link-nav {
@@ -128,6 +121,12 @@ section {
   color: var(--prressed-state);
 }
 
+.header-nav-li {
+  display: flex;
+  padding: 24px 0;
+  gap: 40px;
+}
+
 address {
   font-size: 16px;
   color: var(--main-text-color);
@@ -136,6 +135,12 @@ address {
 }
 .address-link {
   display: flex;
+  gap: 40px;
+}
+
+.adress-li {
+  display: flex;
+  padding: 24px 0;
   gap: 40px;
 }
 
@@ -159,25 +164,24 @@ address {
 
 /*Hero image (Figma)/Section 1 (VSC)*/
 .section-one {
-  display: block;
-
+  padding: 188px 0;
   line-height: 1.07;
   background-color: var(--dark-color);
   letter-spacing: 0.02em;
+
+  display: flex;
+  justify-content: center;
 }
 .section-one-title {
   font-size: 56px;
-  text-align: center;
+
   color: var(--main-background-color);
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
 
-  padding-top: 68px;
-  padding-bottom: 48px;
-
-  display: flex;
-  justify-content: center;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 .button-order-service {
   background: var(--primary-brand-color);
@@ -189,10 +193,14 @@ address {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
 
+  min-width: 169px;
+  height: 56px;
+  border: none;
+
   margin-left: auto;
   margin-right: auto;
 
-  display: flex;
+  display: block;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 32px;
@@ -215,10 +223,17 @@ address {
   background-color: var(--main-background-color);
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .section-two .container {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+
+  padding: 120px 0;
 }
 
 .section-two-h {
@@ -234,13 +249,17 @@ address {
 .section-two-p {
   font-size: 16px;
   line-height: 1.5;
-  width: 264px;
+}
+
+.section-two-li {
+  width: calc((100% - 72px) / 4);
 }
 
 /* Section 2 (Figma)/Section 3 (VSC)*/
 
 .section-three {
   padding-top: 0;
+  padding-bottom: 120px;
 }
 
 .section-three-title {
@@ -251,13 +270,19 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
 
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+
+.section-three-li {
+  gap: 24px;
+  width: calc((100% - 48px) / 3);
 }
 
 /* Section 3 (Figma)/Section 4 (VSC)*/
 
 .section-four {
   background-color: var(--light-color);
+  padding: 120px 0;`
 }
 .team-card {
   background: var(--main-background-color);
@@ -268,11 +293,17 @@ address {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 32px;
+
+  width: calc((100% - 72px) / 4);
+  gap: 24px;
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.personal-card{
+  padding: 32px 16px;
 }
 .section-four-main-title {
   font-size: 36px;
@@ -293,19 +324,19 @@ address {
   font-size: 20px;
   line-height: 1.2;
 
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .section-four-p {
   font-size: 16px;
   text-align: center;
+
 }
 
 /*Footer*/
 .footer {
   background: var(--dark-color);
 
-  padding: 100px 156px;
+   padding: 100px 0;
 }
 .footer .container {
   justify-content: space-between;
