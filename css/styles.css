@@ -124,6 +124,9 @@ img {
 .header-link-nav {
   color: var(--dark-color);
   text-decoration: none;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-link .header-link-nav:hover,
 .header-link .header-link-nav:focus {
@@ -136,10 +139,6 @@ img {
 
 .header-nav-li {
   display: flex;
-  /*-----------------------------------check*/
-  padding-top: 24px;
-  padding-bottom: 24px;
-
   gap: 40px;
 }
 
@@ -156,8 +155,7 @@ address {
 
 .adress-li {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   gap: 40px;
 }
 
@@ -169,6 +167,9 @@ address {
   text-decoration: none;
   line-height: 1.5;
   font-style: normal;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address-link .address-link-nav:hover,
 .address-link .address-link-nav:focus {
