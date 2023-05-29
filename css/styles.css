@@ -123,7 +123,10 @@ img {
 
 .header-nav-li {
   display: flex;
-  padding: 24px 0;
+  /*-----------------------------------check*/
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   gap: 40px;
 }
 
@@ -224,10 +227,6 @@ address {
 .section-two {
   background-color: var(--main-background-color);
   padding: 120px 0;
-}
-
-.visually-hidden {
-  visibility: hidden;
 }
 
 .section-two .container {
