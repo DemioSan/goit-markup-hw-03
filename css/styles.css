@@ -22,6 +22,19 @@ h3 {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 header {
   background-color: var(--main-background-color);
 }
@@ -143,7 +156,8 @@ address {
 
 .adress-li {
   display: flex;
-
+  padding-top: 24px;
+  padding-bottom: 24px;
   gap: 40px;
 }
 
@@ -375,8 +389,6 @@ address {
   display: flex;
   justify-content: center;
   gap: 24px;
-
-  /*margin-bottom: 72px;*/
 }
 
 .button-filters {
